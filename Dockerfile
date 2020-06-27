@@ -12,6 +12,4 @@ RUN apk add --no-cache bash \
   && \
   pip --no-cache-dir install awscli
 
-RUN npm install -g serverless
-
-WORKDIR /opt/app
+RUN yarn global add serverless
